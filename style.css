@@ -30,6 +30,24 @@ section::before {
     cursor: pointer;
 }
 
+.contact::before {
+    content: 'contact';
+}
+
+.contact {
+    padding-bottom: 128px;
+}
+
+.contact-form {
+    border: 1px solid black;
+    padding: 64px 34px;
+}
+
+.form-label {
+    font-weight: 700;
+    
+}
+
 .about-exp-item-detail {
     display: none;
 }
