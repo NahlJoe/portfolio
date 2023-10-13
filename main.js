@@ -11,4 +11,26 @@ function toggleDetail(e) {
     $(detail).slideToggle()
     console.log($(item).children(".about-exp-item-detail"))
     
-}
+} 
+
+function onFormSubmit(e) {
+    e.preventDefault()
+    const email = $("#inp_email")
+    const subject = $("#inp_subject")
+    const message = $("#inp_message")
+
+    // console.log($(subject).val())   
+    
+    if(!$(email).val()) {
+        alert("Email is required")
+    } else if(!$(subject).val()) {
+        alert("subject is required")
+    } else if (!$(message).val()) {
+        alert("message is required")
+    } else {
+        alert("form submitted")
+        $(email).val("")
+        $(subject).val("")
+        $(message).val("")
+    }
+}  

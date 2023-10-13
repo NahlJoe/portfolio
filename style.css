@@ -125,6 +125,10 @@ section::before {
 .home h3 {
     font-size: 48px;
 }
+.home .col-4 img {
+    width: 100%;
+}
+
 #home .arrow img {
     width: 74px;
 }
@@ -145,6 +149,20 @@ section::before {
     align-items: center;
     justify-content: space-between;
 }
+
+@media only screen and (max-width: 768px) {
+    .home img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    section::before {
+        left: -10px;
+        font-size: 64px;
+    }
+}
+
 
 @keyframes updown {
     0% {

@@ -8,48 +8,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg">
-          <div class="container">
-        <a class="navbar-brand fs-3 fw-bold" href="#">John Doe</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-        </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">John Doe</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
     <section id="home" class="home container"> 
-      <div class="row d-flex align-items-center">
-          <div class="col-8">
+      <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+          <div class="col-12 col-md-8">
               <h3 class="fw-semibold">hi! i am </h3>
               <h1 class="fw-bold">John Doe</h1>
               <p>i am a software engineer based in indonesia</p>
               <a class="btn button" href="images/potrait.png" download>Resume</a>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
               <img src="images/potrait.png" alt="potrait">
           </div>
       </div>
-      <div class="arrow w-100 d-flex align-items-center flex-column mt-5">
-        <a class="text-decoration-none" href="#about">More Info</a>
+      <a  href="#about" class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5">
+        <div class="text-dark">More Info</a>
         <img id="arrow" class="mt-2" src="images/arrow.svg" alt="arrow icon">
         <!-- img pake id arrow -->
         <!-- buat ngejalanin bootstrap dia itu pake atribute class -->
-      </div>
+      </a>
     </section>
     <section id="about" class="about container">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum est quae debitis porro, eaque voluptates. Voluptate magnam debitis molestiae vero laborum animi repellat. Nulla tempore quisquam ab dicta et non illum laboriosam, ipsum labore aut. Quas sequi fuga commodi ipsa quam nemo quidem repellendus perspiciatis aliquid! Doloribus ut assumenda ratione?</p>
@@ -91,10 +91,10 @@
     </section>
     <section id="work" class="work container">
       <div class="row d-flex align-items-center gap-5">
-        <div class="col">
+        <div class="col-12 col-5">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatem, ea et ratione, explicabo fugit rerum voluptate magnam dolor reiciendis distinctio repellat provident hic laudantium. Neque quo maiores vero deleniti maxime rerum sed dolorum quae optio obcaecati minima, quibusdam sapiente iste consectetur enim, rem totam nesciunt voluptatibus commodi. Sequi, ipsa?</p>
         </div>
-        <div class="col work-img">
+        <div class="col-12 col-6 work-img">
           <div id="work-1" class="work-img-item">
             <img src="images/work-1.png" alt="work 1">
           </div>
@@ -109,36 +109,36 @@
     </section>
     <section id="contact" class="contact container">
       <div class="row d-flex align-items-center gap-5">
-        <div class="col">
+        <div class="col-12 col-lg-6">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, minima consequatur beatae quis atque, quae praesentium accusantium, suscipit adipisci officia dolorem doloremque incidunt. Atque ex repellat doloribus fugiat nobis cupiditate, ad voluptatibus. Soluta exercitationem eos distinctio et quae tenetur cum!  </p>
           <div class="row">
-            <div class="col">
-              <img src="images/Facebook.svg" alt="facebook icon">
-              <p>@John Doe</p>
+            <div class="col d-flex align-items-center">
+              <img class="w-25" src="images/Facebook.svg" alt="facebook icon">
+              <p class=" mb-0 ms-2">@John Doe</p>
             </div>
-            <div class="col">
-              <img src="images/Instagram.svg" alt="instagram icon">
-              <p>@John Doe</p>
+            <div class="col d-flex align-items-center">
+              <img class="w-25" src="images/Instagram.svg" alt="instagram icon">
+              <p class="mb-0 ms-2" >@John Doe</p>
             </div>
-            <div class="col">
-              <img src="images/Twitter.svg" alt="twitter icon">
-              <p>@John Doe</p>
+            <div class="col d-flex align-items-center">
+              <img class="w-25" src="images/Twitter.svg" alt="twitter icon">
+              <p class=" mb-0 ms-"2>@John Doe</p>
             </div>
           </div>
         </div>
-        <div class="col">
-          <form class="contact-form">
+        <div class="col-12 col-lg-5">
+          <form class="contact-form" onsubmit="onFormSubmit(event)">
             <div class="mb-3">
               <label for="inp_email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="inp_email" placeholder="example@gmail.com">
+              <input type="email" class="form-control" id="inp_email" placeholder="example@gmail.com" required>
             </div>
             <div class="mb-3">
               <label for="inp_subject" class="form-label">Subject</label>
-              <input type="text" class="form-control" id="inp_subject" placeholder="Your Subject">
+              <input type="text" class="form-control" id="inp_subject" placeholder="Your Subject" required>
             </div>
             <div class="mb-3">
               <label for="inp_message" class="form-label">Message</label>
-              <input type="password" class="form-control" id="inp_message" placeholder="Your Message">
+              <input type="password" class="form-control" id="inp_message" placeholder="Your Message" required>
             </div>
             <div class="d-flex justify-content-center mt-5">
               <button type="text" class="btn button">Submit</button>
@@ -149,7 +149,7 @@
     </section>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.c /jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
-</html>
+</html> 
